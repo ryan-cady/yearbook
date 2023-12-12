@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "hair4.svg",
       "hair5.svg",
       "hair6.svg",
+      "hair7.svg",
     ];
   
     const eyesImages = [

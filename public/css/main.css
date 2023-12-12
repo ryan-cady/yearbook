@@ -1,0 +1,326 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #323232;
+    font-weight: 100;
+    color: white;
+    font-family: "alfabet", sans-serif;
+}
+
+h1, h1 a {
+    font-weight: 100;
+    font-size: 62px;
+    text-align: left;
+    color: #747474;
+    text-transform: uppercase;
+    text-decoration: none;
+    float: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #F4F4F4
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin: 20px 0 0 0;
+    text-align: center;
+    display: inline-block;
+}
+
+header button {
+    position: relative;
+    margin: 0;
+    margin-top: 22px;
+    float: right;
+}
+
+#wrapper {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.head {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 157 / 198;
+    margin: 0 auto;
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 10px solid white; */
+    background-color: #b6b6b6;
+    /* box-sizing: border-box; */
+}
+
+.hair,
+.eyes,
+.nose,
+.mouth,
+.glasses,
+.eyebrows {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: none;
+}
+
+button,
+#submit_button {
+    width: auto;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+}
+
+.buttons {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.buttons button {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    padding: 0px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.buttons button img {
+    margin-top: 3px;
+}
+
+.buttons button:hover {
+    background-color: yellow;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    padding: 0px;
+    border-radius: 50%;
+}
+
+#colorPicker {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+    margin-top: 10px;
+}
+
+#colorPicker p {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    top: -3px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+#backgroundColorInput {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+#saveImage {
+    position: relative;
+    text-align: center;
+    float: left;
+    margin: 0;
+}
+
+#picker {
+    position: relative;
+    margin-top: 0;
+    background-color: none;
+    display: inline-block;
+    background-color: none;
+    padding: 13px 0px;
+}
+
+.composeContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Define two equal-width columns */
+    grid-column-gap: 40px;
+}
+
+.composeLeft {
+    display: grid;
+    grid-template-columns: 100%;
+    /* Define a single column for composeLeft */
+}
+
+.composeRight {
+    display: grid;
+    grid-template-columns: 100%;
+    /* Define a single column for composeRight */
+}
+
+#navigation {
+    position: relative;
+    width: 100%;
+    margin: 40% 0 0 0;
+    text-align: center;
+}
+
+form {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+form #your_name {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    background-color: #323232;
+    text-align: center;
+    border-bottom: 1px solid darkgrey;
+    text-transform: uppercase;
+}
+
+form #submit_button {
+    width: 100%;
+}
+
+#gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin-bottom: 100px;
+}
+
+#gallery-container img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 157 / 198;
+    margin: 0 auto;
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 10px solid white;
+    background-color: #b6b6b6;
+    box-sizing: border-box;
+}
+
+.name {
+    margin: 20px 0px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+@media screen and (max-width: 768px) {
+    #wrapper {
+        width: 90%;
+    }
+    
+    .composeContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .composeLeft {
+        margin-top: 40px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    #saveImage, #picker {
+        position: relative;
+        top: 10px
+    }
+
+    #wrapper header h1 a {
+        position: relative;
+        font-size: 40px;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    header h1, header button, #colorPicker button, #colorPicker #picker {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #picker {
+        margin: 0 auto;
+        width: 100%;
+        height: 40px;
+        padding: 0;
+        background: none;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    #colorPicker #picker p {
+        text-align: left;
+    }
+
+    #navigation {
+        margin: 0;
+    }
+
+    form {
+        margin-bottom: 100px;
+    }
+
+    #galleryButton, #avatarButton {
+        margin-top: 10px;
+    }
+
+    #gallery-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        margin-bottom: 100px;
+        position: relative;
+        top: 50px
+    }
+
+
+}
